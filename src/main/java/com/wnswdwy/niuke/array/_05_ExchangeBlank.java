@@ -1,4 +1,4 @@
-package com.wnswdwy.array;
+package com.wnswdwy.niuke.array;
 
 import java.util.Arrays;
 
@@ -29,6 +29,7 @@ public class _05_ExchangeBlank {
                 newStr += temp;
             }
         }
+        Str = newStr;
 
         System.out.println(newStr);
     }

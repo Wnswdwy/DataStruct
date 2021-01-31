@@ -1,4 +1,4 @@
-package com.wnswdwy.array;
+package com.wnswdwy.niuke.array;
 
 import java.util.Arrays;
 
