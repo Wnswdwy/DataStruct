@@ -12,17 +12,29 @@ package com.wnswdwy.niuke.others;
 public class _14_CutString_2_TanXin {
 
     public int cutRope(int n) {
-        if(n < 2) return 0;
-        if(n == 2) return 1;
-        if(n == 3) return 2;
-        int threeCount = n / 3;
+//        if(n < 2) return 0;
+//        if(n == 2) return 1;
+//        if(n == 3) return 2;
+//        int threeCount = n / 3;
+//
+//        if(( n - 3*threeCount ) == 1) threeCount--;
+//
+//        int twoCount = (n - threeCount * 3) / 2;
+//
+//        int Count = (int)Math.pow(3,threeCount) * (int)Math.pow(2,twoCount);
+//
+//        return Count;
 
-        if(( n - 3*threeCount ) == 1) threeCount--;
+        if( n <= 3) return n - 1;
+        if( n == 4) return n;
 
-        int twoCount = (n - threeCount * 3) / 2;
+        int res = 1;
+        while(n > 4){
+            res *= 3;
+            n -= 3;
+        }
 
-        int Count = (int)Math.pow(3,threeCount) * (int)Math.pow(2,twoCount);
+        return res * n;
 
-        return Count;
     }
 }

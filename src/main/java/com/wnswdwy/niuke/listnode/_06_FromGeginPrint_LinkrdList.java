@@ -1,4 +1,4 @@
-package com.wnswdwy.niuke.list;/*
+package com.wnswdwy.niuke.listnode;/*
 package com.wnswdwy.array;
 
 import javax.swing.*;
