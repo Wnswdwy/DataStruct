@@ -1,4 +1,5 @@
-package com.wnswdwy.niuke.listnode;/*
+package com.wnswdwy.niuke.listnode;
+/*
 package com.wnswdwy.array;
 
 import javax.swing.*;
@@ -38,7 +39,8 @@ public class _06_FromGeginPrint_LinkrdList {
 
 class ListNode {
         int val;
-        ListNode next = null;ListNode(int val) {
+        ListNode next = null;
+        ListNode(int val) {
             this.val = val;
         }
     }

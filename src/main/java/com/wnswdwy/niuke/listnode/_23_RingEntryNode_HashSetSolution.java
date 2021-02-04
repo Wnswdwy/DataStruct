@@ -10,9 +10,9 @@ public class _23_RingEntryNode_HashSetSolution {
 
 
 
-        public ListNode23 EntryNodeOfLoop(ListNode23 head)
+        public ListNode EntryNodeOfLoop(ListNode head)
         {
-            HashSet<ListNode23> hashSet = new HashSet<>();
+            HashSet<ListNode> hashSet = new HashSet<>();
             while(head != null){
                 if(!hashSet.add(head)){
                     return head;
@@ -22,13 +22,4 @@ public class _23_RingEntryNode_HashSetSolution {
             return null;
         }
 
-}
-
-class ListNode23 {
-    int val;
-    ListNode23 next = null;
-
-    ListNode23(int val) {
-        this.val = val;
-    }
 }

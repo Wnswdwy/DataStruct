@@ -8,12 +8,12 @@ package com.wnswdwy.niuke.listnode;
  */
 public class _24_ReverseLinkedList {
 
-    public ListNode24 reverseList(ListNode24 head) {
-        ListNode24 pre = null;
-        ListNode24 cur = head;
+    public ListNode reverseList(ListNode head) {
+        ListNode pre = null;
+        ListNode cur = head;
 
         while (cur != null){
-            ListNode24 temp = cur.next;
+            ListNode temp = cur.next;
             cur.next = pre;
             pre = cur;
             cur = temp;
@@ -22,11 +22,5 @@ public class _24_ReverseLinkedList {
         return pre;
     }
 
-}
-
-class ListNode24 {
-    int val;
-    ListNode24 next;
-    ListNode24(int x) { val = x; }
 }
 

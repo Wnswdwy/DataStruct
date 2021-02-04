@@ -12,14 +12,13 @@ package com.wnswdwy.niuke.others;
 public class _10_1_Fibonaccis {
     public int Fibonacci(int n) {
         int sum = 0;
-        if(n == 0){
-            return 0;
-        }
-        if(n == 1){
-            return 1;
+        if(n == 0 || n == 1){
+            return n;
         }else{
             sum =  Fibonacci(n-1) + Fibonacci(n-2);
         }
+
+
         return sum;
     }
 }

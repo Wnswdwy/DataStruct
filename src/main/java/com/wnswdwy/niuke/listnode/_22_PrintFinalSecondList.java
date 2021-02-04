@@ -13,9 +13,9 @@ package com.wnswdwy.niuke.listnode;
 public class _22_PrintFinalSecondList {
 
 
-    public ListNode22 getKthFromEnd(ListNode22 head, int k) {
-        ListNode22 first = head;
-        ListNode22 second = head;
+    public ListNode getKthFromEnd(ListNode head, int k) {
+        ListNode first = head;
+        ListNode second = head;
 
         for(int i = 0; i < k; i++){
             if(first == null)
@@ -29,15 +29,5 @@ public class _22_PrintFinalSecondList {
         }
 
         return second;
-    }
-}
-
-
-class ListNode22 {
-    int val;
-    ListNode22 next = null;
-
-    ListNode22(int val) {
-        this.val = val;
     }
 }

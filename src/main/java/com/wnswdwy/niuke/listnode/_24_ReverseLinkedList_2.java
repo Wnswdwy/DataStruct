@@ -8,10 +8,10 @@ package com.wnswdwy.niuke.listnode;
  */
 public class _24_ReverseLinkedList_2 {
 
-    public ListNode24_2 reverseList(ListNode24_2 head) {
+    public ListNode reverseList(ListNode head) {
         if(head == null || head.next == null)
             return head;
-        ListNode24_2 p = reverseList(head.next);
+        ListNode p = reverseList(head.next);
         head.next.next = head;
         head.next = null;
         return p;
@@ -19,9 +19,4 @@ public class _24_ReverseLinkedList_2 {
 
 }
 
-class ListNode24_2 {
-    int val;
-    ListNode24_2 next;
-    ListNode24_2(int x) { val = x; }
-}
 
